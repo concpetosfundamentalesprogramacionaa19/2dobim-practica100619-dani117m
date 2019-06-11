@@ -15,8 +15,13 @@ public class Practica100619 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // En esta clase solo se imprimira el registro delos jugadores
-        // RegistroF.leerRegistro();
+        // muestra de promedios 
+        RegistroPromedio.leerPromedio();
+        // En esta clase solo se imprimira el registro de los jugadores
+        RegistroF.leerRegistro();
+
+       
+        
     }
     
 }

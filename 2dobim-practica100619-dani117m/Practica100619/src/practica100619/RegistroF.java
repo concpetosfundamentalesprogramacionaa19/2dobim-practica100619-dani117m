@@ -26,26 +26,38 @@ public class RegistroF {
         {   // se utliza el escaner para leer el archivo txt  
             // en new file se pone la direcion del mismo
             Scanner entrada = new Scanner (new File("data/tabula-FWC_2018_Squadlists_4.txt")); 
-            
+
             //abrimos un ciclo while 
             while (entrada.hasNext()) {
                 
                 String separador = entrada.nextLine();
-                
+                // se utliza una arraylist
                 ArrayList<String> separador_lineas = new ArrayList<>(
                     Arrays.asList(separador.split("\\|")));// se utilizara el separador |
                      // contador
-                    int c = 0 ;
-                    c++;
-                    System.out.printf("%s\n", separador_lineas.get(c));
-            }
-            // se utliza una arraylist
+                    
+                    System.out.printf("%s\n", separador_lineas.get(0));
+                    System.out.printf("%s\n", separador_lineas.get(1));
+                    System.out.printf("%s\n", separador_lineas.get(2));
+                    System.out.printf("%s\n", separador_lineas.get(3));
+                    System.out.printf("%s\n", separador_lineas.get(4));
+                    System.out.printf("%s\n", separador_lineas.get(5));
+                    System.out.printf("%s\n", separador_lineas.get(6));
+                    System.out.printf("%s\n", separador_lineas.get(7));
+                    System.out.printf("%s\n", separador_lineas.get(8));
+                    System.out.printf("%s\n", separador_lineas.get(9));
+                    System.out.printf("%s\n", separador_lineas.get(10));
+                    System.out.printf("%s\n", separador_lineas.get(11));
+                    System.out.println("");
+      
+            }//fin while
             
+            entrada.close();
         }// fin del try
         catch (Exception e) {
             System.err.println("Error al leer del archivo. ");
             System.exit(1);
         } // fin de catch
-    }
+    } // fin del metodo leerregistro
     
-}
+} // fin de la clase
